@@ -1,11 +1,16 @@
 # Python test sandbox
 
-## Install 
+## Setup
 
 ```bash
+# Install poetry
 $ poetry install
 ```
 
+```bash
+# Start the database
+$ docker-compose up -d
+```
 ## Run
 
 ```bash
