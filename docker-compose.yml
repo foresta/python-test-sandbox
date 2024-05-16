@@ -10,6 +10,7 @@ services:
         ports:
           - "13306:3306"
         volumes:
+          - ./docker/mysql/init.d:/docker-entrypoint-initdb.d
           - sandbox_mysql:/var/lib/mysql
         environment:
           MYSQL_DATABASE: sandbox 

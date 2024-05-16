@@ -10,9 +10,14 @@ def main():
     }
     with MySQLSession(accout) as session:
         cursor = session.cursor()
-        cursor.execute("SELECT \"Hello\"")
+        cursor.execute("show tables")
         for row in cursor.fetchall():
             print(row)
+
+        cursor.execute("select 1")
+        for row in cursor.fetchall():
+            print(row)
+ 
         cursor.close()
     
 
